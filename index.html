@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <title>Timed Web Quiz</title>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div id="main-container">
+      <div id="bg-pattern">
+      </div>
+      <!-- Top Bar Section -->
+      <div id="top-bar">
+        <a href="./scores.html">
+        <button class="btn-style">View Highscores</button>
+        </a>
+        <p class="timer-count">Timer : <span id="countdown">0</span></p>
+      </div>
+      <!-- Inner Section -->
+      <!-- Phase 1 -->
+      <div id="inner-section">
+        <header id="quiz-intro" class="">
+          <h1>Coding Quiz Challenge</h1>
+          <p>
+            Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            score/time by 10 seconds!
+          </p>
+          <div id="start-btn">
+            <button class="btn-style">Start Quiz</button>
+          </div>
+        </header>
+        <!-- Quiz Content -->
+        <!-- Phase 2 -->
+        <main id="quiz-content">
+          <section id="quiz-screen" class="hide">
+            <h2 id="question-text">
+            </h2>
+            <div id="answer-list">
+              <ul>
+                <li><button class="btn-quiz answer-btns" id="answer1"></button></li>
+                <li><button class="btn-quiz answer-btns" id="answer2"></button></li>
+                <li><button class="btn-quiz answer-btns" id="answer3"></button></li>
+                <li><button class="btn-quiz answer-btns" id="answer4"></button></li>
+              </ul>
+            </div>
+            <div id="space-break"></div>
+            <!-- Feedback -->
+            <section id="feedback">
+              <h2 id="feedback-text"></h2>
+            </section>
+          </section>
+          <!-- Phase 3 -->
+          <section id="quiz-finish" class="hide">
+            <h1>All Done!</h1>
+            <div id="user-data">
+              <p>Your final score is 22.</p>
+              <input
+                type="text"
+                name="user-name"
+                id="name-input"
+                placeholder="Enter your initials"
+              />
+              <input type="submit" id="submit-btn" />
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="./assets/scripts/questions.js"></script>
+  </body>
+</html>
